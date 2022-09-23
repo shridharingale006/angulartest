@@ -1,0 +1,10 @@
+<input type="text" [(ngModel)]="searchid" value="Sydney" class="form-control"/>
+<button (click)="onClick(searchid)">Search </button> <br> <br>
+
+Your Searched Images 
+<br>
+<br>
+
+<div *ngFor="let img of videourl" class="form-control">
+    <img  src="{{img.largeImageURL}}" width="30%" height="30%" alt="Image">
+</div>
